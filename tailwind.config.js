@@ -5,9 +5,9 @@ export default {
     theme: {
         extend: {
             colors: {
-                blue: '#2cbce9',
-                red: '#DC4492',
-                yellow: '#FDCC49',
+                blue: '#6277DE',
+                red: '#DE6378',
+                green: '#78DE63',
                 grey: '#EDEDED',
                 'deep-blue': '#010026',
                 'dark-grey': '#757575',
@@ -15,14 +15,14 @@ export default {
             },
             backgroundImage: () => ({
                 'gradient-rainbow':
-                    'linear-gradient(90deg, #00b5ee 7.21%, #ff45a4 45%, #ffba00 78%)',
+                    'linear-gradient(90deg, #00EE37 7.21%, #3800F0 45%, #F03800 78%)',
 
                 'gradient-blue':
                     'linear-gradient(90deg, #24cbff 14.53%, #fc59ff 69.36%, #ffbd0c 117.73%)',
             }),
             fontFamily: {
-                'Merriweather-Sans': ['Merriweather Sans', 'sans-serif'],
-                merriweather: ['Merriweather', 'serif'],
+                merriweathersans: ['Merriweather Sans'],
+                merriweather: ['Merriweather'],
             },
             content: {
                 brush: "url('./assets/brush.svg')",
