@@ -8,7 +8,7 @@ function App() {
     return (
         <div className="app bg-deep-blue">
             <Navbar
-                SelectPage={selectedPage}
+                selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
             />
         </div>
