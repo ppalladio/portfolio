@@ -39,7 +39,7 @@ const Navbar: React.FC<NavBarProps> = ({
                             setSelectedPage={setSelectedPage}
                         />
                     </div>
-                ) : !isMenuToggled ? (
+                ) : (
                     <button
                         style={{
                             color: 'white',
@@ -51,22 +51,18 @@ const Navbar: React.FC<NavBarProps> = ({
                     >
                         <AiOutlineMenu size={20} />
                     </button>
-                ) : (
-                    <button
-                        style={{
-                            color: 'white',
-                            background: '#DE6378',
-                            padding: '10px',
-                            borderRadius: '100%',
-                        }}
-                        onClick={() => setIsMenuToggled(!isMenuToggled)}
-                    >
-                        <AiOutlineClose size={20} />
-                    </button>
                 )}
                 {/*// @ mobile nav */}
                 {!isDesktop && isMenuToggled && (
                     <div className="fixed right-0 bottom-0 h-full bg-blue w-[300px]">
+                        <div className="flex justify-end p-5">
+                            <button
+                                onClick={() => setIsMenuToggled(!isMenuToggled)}
+                            >
+                                
+                                <AiOutlineClose size={20} />
+                            </button>
+                        </div>
                         {/* menu item */}
                         <div className="flex flex-col gap-10 ml-[33%] text-2xl text-deep-blue">
                             <Link
