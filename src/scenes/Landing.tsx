@@ -1,3 +1,4 @@
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 import useMediaQuery from '../hooks/useMediaQuery';
 import { motion } from 'framer-motion';
 interface LandingProps {
@@ -56,6 +57,37 @@ const Landing: React.FC<LandingProps> = ({ setSelectedPage }) => {
                         exercitation ullamco laboris nisi ut aliquip ex ea
                         commodo consequat.
                     </p>
+                </motion.div>
+
+                {/* cta  */}
+
+                <motion.div
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, amount: 0.5 }}
+                    transition={{ delay: 0.2, duration: 0.5 }}
+                    variants={{
+                        hidden: { opacity: 0, x: -50 },
+                        visible: { opacity: 1, x: 0 },
+                    }}
+                    className="flex mt-5 justify-center md:justify-start"
+                >
+                    <AnchorLink
+                        className="bg-gradient-blue text-deep-blue rounded-sm px-7 py-3 font-semibold hover:bg-green hover:text-white transition duration-500"
+                        onClick={() => setSelectedPage('contact')}
+                        href="#contact"
+                    >
+                        Contact
+                    </AnchorLink>
+                    <AnchorLink
+                        className="rounded-r-sm bg-gradient-blue py-0.5 pr-0.5 "
+                        onClick={() => setSelectedPage('contact')}
+                        href="#contact"
+                    >
+                        <div className="bg-deep-blue hover:text-red transition duration-500 w-full h-full items-center flex justify-center font-merriweather px-10">
+                            talk
+                        </div>
+                    </AnchorLink>
                 </motion.div>
             </div>
         </section>
