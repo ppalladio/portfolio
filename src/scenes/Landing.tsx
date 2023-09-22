@@ -1,6 +1,7 @@
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import useMediaQuery from '../hooks/useMediaQuery';
 import { motion } from 'framer-motion';
+import SocialMediaIcons from '../components/SocialMediaIcons';
 interface LandingProps {
     setSelectedPage: (page: string) => void;
 }
@@ -89,6 +90,19 @@ const Landing: React.FC<LandingProps> = ({ setSelectedPage }) => {
                         </div>
                     </AnchorLink>
                 </motion.div>
+
+				<motion.div
+				initial="hidden"
+				whileInView="visible"
+				viewport={{ once: true, amount: 0.5 }}
+				transition={{ delay: 0.4, duration: 0.5 }}
+				variants={{
+					hidden: { opacity: 0, x: -50 },
+					visible: { opacity: 1, x: 0 },
+				}}>
+
+<SocialMediaIcons/>
+				</motion.div>
             </div>
         </section>
     );
