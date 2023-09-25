@@ -22,7 +22,7 @@ const DotGroup: React.FC<DotGroupProps> = ({
                 className={`${
                     selectedPage === 'project' ? selectedStyle : 'bg-dark-grey'
                 } w-3 h-3 rounded-full `}
-                href="#home"
+                href="#projects"
                 onClick={() => setSelectedPage('home')}
             />
             <AnchorLink
