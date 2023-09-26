@@ -18,26 +18,26 @@ const Contact = ({}) => {
         <section id="contact" className="py-48">
             {/* heading */}
             <motion.div
-                className="md:w-1/3 text-center md:text-left"
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.5 }}
                 transition={{ duration: 0.5 }}
                 variants={{
-                    hidden: { opacity: 0, x: -50 },
+                    hidden: { opacity: 0, x: 50 },
                     visible: { opacity: 1, x: 0 },
                 }}
+                className="flex justify-center w-full"
             >
                 <div>
-                    <p className="font-merriweather flex justify-center font-semibold text-4xl ">
-                        CONTACT
+                    <p className="font-merriweather font-semibold text-4xl">
+                        <span className="text-green">CONTACT ME</span> TO GET
+                        STARTED
                     </p>
-                    <div className="flex md:justify-end my-5">
-                        <LineGradient width="mx-auto w-3/4" />
+                    <div className="flex md:justify-center my-5">
+                        <LineGradient width="w-1/2" />
                     </div>
                 </div>
             </motion.div>
-
             {/* form */}
             <div className="md:flex md:justify-between gap-16 mt-5">
                 <motion.div
@@ -70,8 +70,8 @@ const Contact = ({}) => {
                     <form
                         target="_blank"
                         onSubmit={onSubmit}
-                        action=""
                         method="POST"
+                        action="https://formsubmit.co/51b153074d11aa68cd03a0e9778a15d4"
                     >
                         <input
                             className="w-full bg-blue font-semibold placeholder-opaque-black p-3"
@@ -125,6 +125,13 @@ const Contact = ({}) => {
                                     'max length must be 2000 characters or less'}
                             </p>
                         )}
+
+                        <button
+                            type="submit"
+                            className="bg-gradient-blue font-semibold px-5 py-1 rounded-[2px] capitalize text-white mt-5 hover:bg-green hover:text-white transition duration-500"
+                        >
+                            send
+                        </button>
                     </form>
                 </motion.div>
             </div>
