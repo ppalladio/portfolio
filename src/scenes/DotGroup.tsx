@@ -20,17 +20,17 @@ const DotGroup: React.FC<DotGroupProps> = ({
             />
             <AnchorLink
                 className={`${
-                    selectedPage === 'project' ? selectedStyle : 'bg-dark-grey'
+                    selectedPage === 'projects' ? selectedStyle : 'bg-dark-grey'
                 } w-3 h-3 rounded-full `}
                 href="#projects"
-                onClick={() => setSelectedPage('home')}
+                onClick={() => setSelectedPage('projects')}
             />
             <AnchorLink
                 className={`${
                     selectedPage === 'contact' ? selectedStyle : 'bg-dark-grey'
                 } w-3 h-3 rounded-full `}
-                href="#home"
-                onClick={() => setSelectedPage('home')}
+                href="#contact"
+                onClick={() => setSelectedPage('contact')}
             />
         </div>
     );

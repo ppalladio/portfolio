@@ -61,6 +61,14 @@ const Projects = () => {
                         title="Project 2"
                         subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mollis auctor semper. Vivamus vitae maximus purus. Sed eget ligula tellus. Maecenas ipsum tellus,"
                     />
+                    {/* ROW 2 */}
+                    <Project title="Project 3" />
+                    <Project title="Project 4" />
+                    <Project title="Project 5" />
+                    {/* ROW 3 */}
+                    <Project title="Project 6" />
+                    <Project title="Project 7" /> 
+					<Project title="Project 1" />
                 </motion.div>
             </div>
         </section>
