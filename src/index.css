@@ -13,6 +13,7 @@ html,
 #root,
 .app{
     height: 100%;
-    background-color: #5E477F;
-    @apply text-white;
+    background-color: #fbf4fe;
+	color: #444;
+
 }
