@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
 import useMediaQuery from './hooks/useMediaQuery';
 import Navbar from './scenes/Navbar';
 import DotGroup from './scenes/DotGroup';
@@ -40,15 +41,33 @@ function App() {
                         setSelectedPage={setSelectedPage}
                     />
                 )}
-                <Landing setSelectedPage={setSelectedPage} />
+                <motion.div
+                    onViewportEnter={() => setSelectedPage('home')}
+                    amount="all"
+                    className="mx-0 mt-0 my-[-200px]"
+                >
+                    <Landing setSelectedPage={setSelectedPage} />
+                </motion.div>
             </div>
             <LineGradient />
             <div className="w-5/6 mx-auto">
-                <Projects />
+                <motion.div
+                    margin="0 0 -200px 0"
+                    amount="all"
+                    onViewportEnter={() => setSelectedPage('projects')}
+                >
+                    <Projects />
+                </motion.div>
             </div>
             <LineGradient />
             <div className="w-5/6 mx-auto">
-                <Contact />
+                <motion.div
+                    margin="0 0 -200px 0"
+                    amount="all"
+                    onViewportEnter={() => setSelectedPage('contact')}
+                >
+                    <Contact />
+                </motion.div>
             </div>
         </div>
     );

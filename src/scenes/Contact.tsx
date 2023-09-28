@@ -108,7 +108,7 @@ const Contact = () => {
                             </p>
                         )}
                         <textarea
-                            className="w-full bg-blue font-semibold placeholder-opaque-black p-3 mt-10 focus:bg-black"
+                            className="w-full bg-blue font-semibold placeholder-opaque-black p-3 mt-10 focus:bg-gradient-btn"
                             type="text"
                             placeholder="Message"
                             rows={4}

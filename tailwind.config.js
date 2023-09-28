@@ -77,8 +77,8 @@ export default {
                 'gradient-rainbow':
                     'linear-gradient(90deg, #00EE37 7.21%, #3800F0 45%, #F03800 78%)',
 
-                'gradient-blue':
-                    'linear-gradient(90deg, #24cbff 14.53%, #fc59ff 69.36%, #ffbd0c 117.73%)',
+                'gradient-btn':
+                    'linear-gradient(90deg, hsla(265, 53%, 29%, 1) 0%, hsla(24, 93%, 73%, 1) 100%)',
             }),
             fontFamily: {
                 merriweathersans: ['Merriweather Sans'],
