@@ -74,11 +74,11 @@ export default {
                 },
             },
             backgroundImage: () => ({
-                'gradient-rainbow':
-                    'linear-gradient(90deg, #00EE37 7.21%, #3800F0 45%, #F03800 78%)',
-
                 'gradient-btn':
-                    'linear-gradient(90deg, hsla(265, 53%, 29%, 1) 0%, hsla(24, 93%, 73%, 1) 100%)',
+                    'linear-gradient(145deg, hsla(265, 53%, 29%, 1) 0%, hsla(24, 93%, 73%, 1) 100%)',
+
+                'gradient-divider':
+                    'linear-gradient(90deg, hsla(47, 100%, 87%, 1) 0%, hsla(334, 81%, 60%, 1) 50%, hsla(237, 64%, 56%, 1) 100%)',
             }),
             fontFamily: {
                 merriweathersans: ['Merriweather Sans'],
