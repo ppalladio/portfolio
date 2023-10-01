@@ -1,11 +1,11 @@
-import AnchorLink from 'react-anchor-link-smooth-scroll';
+// import AnchorLink from 'react-anchor-link-smooth-scroll';
 import useMediaQuery from '../hooks/useMediaQuery';
-import { motion } from 'framer-motion';
-import SocialMediaIcons from '../components/SocialMediaIcons';
+// import { motion } from 'framer-motion';
+// import SocialMediaIcons from '../components/SocialMediaIcons';
 interface LandingProps {
     setSelectedPage: (page: string) => void;
 }
-const Landing: React.FC<LandingProps> = ({ setSelectedPage }) => {
+const Landing: React.FC<LandingProps> = ({  }) => {
     const isAboveMediumScreen = useMediaQuery('(min-width: 992px)');
     return (
         <section id="home" className="md:flex md:h-full p-0 m-0 ">

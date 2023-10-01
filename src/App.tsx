@@ -43,7 +43,7 @@ function App() {
                 )}
                 <motion.div
                     onViewportEnter={() => setSelectedPage('home')}
-                    amount="all"
+                    // amount="all"
                     className="mx-0 mt-0 my-[-200px]"
                 >
                     <Landing setSelectedPage={setSelectedPage} />
@@ -52,8 +52,8 @@ function App() {
             <LineGradient />
             <div className="w-5/6 mx-auto">
                 <motion.div
-                    margin="0 0 -200px 0"
-                    amount="all"
+                    // margin="0 0 -200px 0"
+                    // amount="all"
                     onViewportEnter={() => setSelectedPage('projects')}
                 >
                     <Projects />
@@ -62,8 +62,8 @@ function App() {
             <LineGradient />
             <div className="w-5/6 mx-auto">
                 <motion.div
-                    margin="0 0 -200px 0"
-                    amount="all"
+                    // margin="0 0 -200px 0"
+                    // amount="all"
                     onViewportEnter={() => setSelectedPage('contact')}
                 >
                     <Contact />
