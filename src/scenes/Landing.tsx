@@ -5,15 +5,15 @@ import useMediaQuery from '../hooks/useMediaQuery';
 interface LandingProps {
     setSelectedPage: (page: string) => void;
 }
-const Landing: React.FC<LandingProps> = ({  }) => {
+const Landing: React.FC<LandingProps> = ({ setSelectedPage }) => {
     const isAboveMediumScreen = useMediaQuery('(min-width: 992px)');
     return (
-        <section id="home" className="md:flex md:h-full p-0 m-0 ">
+        <section id="home" className="md:flex md:h-full md:items-center md:justify-center my-auto ">
             {/* image  */}
             <div className="md:order-2 flex justify-center   z-30">
                 {/* //! need to adjust the img and z-index */}
                 {isAboveMediumScreen ? (
-                    <div className="grid grid-cols-3">
+                    <div className="grid max-w-[50rem] grid-cols-3 ">
                         <img
                             src="../src/assets/profile.png"
                             alt="profile"
@@ -23,27 +23,43 @@ const Landing: React.FC<LandingProps> = ({  }) => {
                             src="../src/assets/profile.png"
                             alt="profile"
                             className="hover:filter hover:saturate-200 transition duration-500 z-20 w-full max-w-[550px] md:max-w-[550px] "
-                        />{' '}
-                        <img
-                            src="../src/assets/profile.png"
-                            alt="profile"
-                            className="hover:filter hover:saturate-200 transition duration-500 z-20 w-full max-w-[550px] md:max-w-[550px] "
-                        />{' '}
-                        <img
-                            src="../src/assets/profile.png"
-                            alt="profile"
-                            className="hover:filter hover:saturate-200 transition duration-500 z-20 w-full max-w-[550px] md:max-w-[550px] "
-                        />{' '}
-                        <img
-                            src="../src/assets/profile.png"
-                            alt="profile"
-                            className="hover:filter hover:saturate-200 transition duration-500 z-20 w-full max-w-[550px] md:max-w-[550px] "
-                        />{' '}
+                        />
                         <img
                             src="../src/assets/profile.png"
                             alt="profile"
                             className="hover:filter hover:saturate-200 transition duration-500 z-20 w-full max-w-[550px] md:max-w-[550px] "
                         />
+                        <img
+                            src="../src/assets/profile.png"
+                            alt="profile"
+                            className="hover:filter hover:saturate-200 transition duration-500 z-20 w-full max-w-[550px] md:max-w-[550px] "
+                        />
+                        <img
+                            src="../src/assets/profile.png"
+                            alt="profile"
+                            className="hover:filter hover:saturate-200 transition duration-500 z-20 w-full max-w-[550px] md:max-w-[550px] "
+                        />
+                        <img
+                            src="../src/assets/profile.png"
+                            alt="profile"
+                            className="hover:filter hover:saturate-200 transition duration-500 z-20 w-full max-w-[550px] md:max-w-[550px] "
+                        />
+						<img
+                            src="../src/assets/profile.png"
+                            alt="profile"
+                            className="hover:filter hover:saturate-200 transition duration-500 z-20 w-full max-w-[550px] md:max-w-[550px] "
+                        />
+						<img
+                            src="../src/assets/profile.png"
+                            alt="profile"
+                            className="hover:filter hover:saturate-200 transition duration-500 z-20 w-full max-w-[550px] md:max-w-[550px] "
+                        />
+						<img
+                            src="../src/assets/profile.png"
+                            alt="profile"
+                            className="hover:filter hover:saturate-200 transition duration-500 z-20 w-full max-w-[550px] md:max-w-[550px] "
+                        />
+						
                     </div>
                 ) : (
                     <img
@@ -71,8 +87,8 @@ export default Landing;
 //         }}
 //     >
 //         <p className="text-6xl font-merriweather z-10 text-center md:text-start">
-//             {' '}
-//             Yuxuan{' '}
+//             
+//             Yuxuan
 //             <span className="xs:relative xs:text-deep-blue xs:font-semibold z-20 xs:before:content-brush before:absolute before:-left-[20px] before:-top-[70px] before:z-[-1]">
 //                 Peng
 //             </span>

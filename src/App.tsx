@@ -46,7 +46,7 @@ function App() {
                     // amount="all"
                     className="mx-0 mt-0 my-[-200px]"
                 >
-                    <Landing setSelectedPage={setSelectedPage} />
+                    <Landing setSelectedPage={setSelectedPage} / >
                 </motion.div>
             </div>
             <LineGradient />
