@@ -11,8 +11,25 @@ body,
 app,
 html,
 #root,
-.app{
+.app {
     height: 100%;
-    background-color: #5E477F;
-    @apply text-white;
+    background-color: #fbf4fe;
+    color: #444;
+}
+.animate-marquee {
+    -moz-animation: marquee 15s linear infinite;
+    -webkit-animation: marquee 15s linear infinite;
+    animation: marquee 15s linear infinite;
+}
+@keyframes marquee {
+    0% {
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+    100% {
+        -moz-transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
 }
