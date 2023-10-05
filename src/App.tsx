@@ -7,7 +7,7 @@ import Landing from './scenes/Landing';
 import LineGradient from './components/LineGradient';
 import Projects from './scenes/Projects';
 import Contact from './scenes/Contact';
-import Carousel from './components/Carousel';
+import Carousel from './components/Marquee';
 
 function App() {
     const [selectedPage, setSelectedPage] = useState('home');
