@@ -7,6 +7,7 @@ import Landing from './scenes/Landing';
 import LineGradient from './components/LineGradient';
 import Projects from './scenes/Projects';
 import Contact from './scenes/Contact';
+import Carousel from './components/Carousel';
 
 function App() {
     const [selectedPage, setSelectedPage] = useState('home');
@@ -59,6 +60,7 @@ function App() {
                     <Projects />
                 </motion.div>
             </div>
+			<Carousel/>
             <LineGradient />
             <div className="w-5/6 mx-auto">
                 <motion.div
