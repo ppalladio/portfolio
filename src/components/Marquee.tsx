@@ -1,19 +1,30 @@
 const Marquee = () => {
     return (
         <div className="h-full max-w-full flex flex-col gap-[6rem] justify-center m-auto">
-            <div className="w-full h-[2rem] pointer-events-none bg-slate-600 overflow-hidden shadow-[0_2rem_2rem_0.4rem_rgba(0,0,0,0.2)]">
-                <div className="h-full w-full">
-                    <div className="h-full w-fit flex items-center relative animate-marquee text-xl text-white">
-                        <div className="h-[8rem] my-0 mx-[4vw] rounded-[100rem] bg-cover bg-center bg-no-repeat filter-[grayscale(0.6)] w-[4vw] ">
+            <div className="w-full h-[20rem] pointer-events-none bg-green overflow-hidden  ">
+                <div className="h-full w-full text-black ">
+                    <div className="h-full w-fit flex items-center relative animate-marquee ">
+                        {/* <div className="h-[8rem] my-0 mx-[4vw] rounded-[100rem] bg-cover bg-center bg-no-repeat filter-[grayscale(0.6)] w-[118px] ">
                             <img
                                 src="../src/assets/letter_testing.jpg"
                                 alt="marquee_photo"
                             />
-                        </div>
-                        <div>content 2</div> <div>content 2</div>
-						<div>content 2</div> <div>content 2</div><div>content 2</div> <div>content 2</div><div>content 2</div> <div>content 2</div><div>content 2</div> <div>content 2</div>
-                        <div>content 2</div> <div>content 2</div>
-                        <div>content 3</div>
+                        </div> */}
+                        <div className="left-chevron "></div>
+                        <div className="left-chevron "></div>
+                        <div className="left-chevron "></div>
+                        <div className="left-chevron "></div>
+                        <div className="left-chevron "></div>
+                        <div className="left-chevron "></div>
+                        <div className="left-chevron "></div>
+                        <div className="left-chevron "></div>
+                        <div className="left-chevron "></div>
+                        <div className="left-chevron "></div>
+                        <div className="left-chevron "></div>
+                        <div className="left-chevron "></div>
+                        <div className="left-chevron "></div>
+                        <div className="left-chevron "></div>
+                        <div className="left-chevron "></div>
                     </div>
                 </div>
             </div>

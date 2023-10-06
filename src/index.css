@@ -16,20 +16,51 @@ html,
     background-color: #fbf4fe;
     color: #444;
 }
+.left-chevron {
+	background: #000;
+	height: inherit;
+	width: 10rem;
+	clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+	margin-left: 10px;
+}
 .animate-marquee {
     -moz-animation: marquee 15s linear infinite;
     -webkit-animation: marquee 15s linear infinite;
-    animation: marquee 15s linear infinite;
+    animation: marquee 10s linear infinite;
+    color: #000;
 }
+
+
+.animate-marquee::after {
+    content: 'dddddddddddddddddddddddddd';
+    -moz-animation: reverse-marquee 1s linear infinite;
+    -webkit-animation: reverse-marquee 1s linear infinite;
+    animation: reverse-marquee 1s linear infinite;
+    position: absolute;
+    background-color: red;
+    height: inherit;
+    width: 100vw;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: translateY(-50%);
+}
+
 @keyframes marquee {
     0% {
-        -moz-transform: translateX(100%);
-        -webkit-transform: translateX(100%);
         transform: translateX(100%);
     }
     100% {
-        -moz-transform: translateX(-100%);
-        -webkit-transform: translateX(-100%);
         transform: translateX(-100%);
+    }
+}
+
+@keyframes reverse-marquee {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
     }
 }
