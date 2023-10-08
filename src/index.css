@@ -46,7 +46,21 @@ html,
     margin: auto;
     transform: translateY(-50%);
 }
-
+.landing-card{
+	transition: all 0.5s ease;
+	backface-visibility: hidden;
+}
+.landing-card:hover{
+	transform: rotateY(180deg); 
+}
+.landing-card-back{
+	background-image: linear-gradient(to bottom right, #5CBC79, #4eb0b9);
+}
+.landing-card:hover .landing-card-back{
+		transform: rotateY(0deg);   margin-left: 10rem;
+        width: 3rem;
+        height: 6rem;
+}
 @keyframes marquee {
     0% {
         transform: translateX(100%);

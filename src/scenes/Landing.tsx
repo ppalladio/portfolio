@@ -13,60 +13,62 @@ const Landing: React.FC<LandingProps> = ({ setSelectedPage }) => {
             <div className="md:order-2 flex justify-center   z-30">
                 {/* //! need to adjust the img and z-index */}
                 {isAboveMediumScreen ? (
+					<div className='border-solid border-deep-blue border-2'>
                     <div className="grid max-w-[50rem] grid-cols-3 ">
                         <img
                             src="../src/assets/profile.png"
                             alt="profile"
-                            className=" "
-                        />
+                            className="landing-card landing-card-back"
+							/>
                         <img
                             src="../src/assets/profile.png"
                             alt="profile"
-                            className="hover:filter hover:saturate-200 transition duration-500 z-20 w-full max-w-[550px] md:max-w-[550px] "
-                        />
+                            className="landing-card landing-card-back hover:filter hover:saturate-200 transition duration-500 z-20 w-full max-w-[550px] md:max-w-[550px] "
+							/>
                         <img
                             src="../src/assets/profile.png"
                             alt="profile"
-                            className="hover:filter hover:saturate-200 transition duration-500 z-20 w-full max-w-[550px] md:max-w-[550px] "
-                        />
+                            className="landing-card landing-card-back hover:filter hover:saturate-200 transition duration-500 z-20 w-full max-w-[550px] md:max-w-[550px] "
+							/>
                         <img
                             src="../src/assets/profile.png"
                             alt="profile"
-                            className="hover:filter hover:saturate-200 transition duration-500 z-20 w-full max-w-[550px] md:max-w-[550px] "
-                        />
+                            className="landing-card landing-card-back hover:filter hover:saturate-200 transition duration-500 z-20 w-full max-w-[550px] md:max-w-[550px] "
+							/>
                         <img
                             src="../src/assets/profile.png"
                             alt="profile"
-                            className="hover:filter hover:saturate-200 transition duration-500 z-20 w-full max-w-[550px] md:max-w-[550px] "
-                        />
+                            className="landing-card landing-card-back hover:filter hover:saturate-200 transition duration-500 z-20 w-full max-w-[550px] md:max-w-[550px] "
+							/>
                         <img
                             src="../src/assets/profile.png"
                             alt="profile"
-                            className="hover:filter hover:saturate-200 transition duration-500 z-20 w-full max-w-[550px] md:max-w-[550px] "
-                        />
+                            className="landing-card landing-card-back hover:filter hover:saturate-200 transition duration-500 z-20 w-full max-w-[550px] md:max-w-[550px] "
+							/>
 						<img
                             src="../src/assets/profile.png"
                             alt="profile"
-                            className="hover:filter hover:saturate-200 transition duration-500 z-20 w-full max-w-[550px] md:max-w-[550px] "
-                        />
+                            className="landing-card landing-card-back hover:filter hover:saturate-200 transition duration-500 z-20 w-full max-w-[550px] md:max-w-[550px] "
+							/>
 						<img
                             src="../src/assets/profile.png"
                             alt="profile"
-                            className="hover:filter hover:saturate-200 transition duration-500 z-20 w-full max-w-[550px] md:max-w-[550px] "
-                        />
+                            className="landing-card landing-card-back hover:filter hover:saturate-200 transition duration-500 z-20 w-full max-w-[550px] md:max-w-[550px] "
+							/>
 						<img
                             src="../src/assets/profile.png"
                             alt="profile"
-                            className="hover:filter hover:saturate-200 transition duration-500 z-20 w-full max-w-[550px] md:max-w-[550px] "
-                        />
+                            className="landing-card landing-card-back hover:filter hover:saturate-200 transition duration-500 z-20 w-full max-w-[550px] md:max-w-[550px] "
+							/>
 						
                     </div>
+					</div>
                 ) : (
                     <img
                         src="../src/assets/profile.png"
                         alt="profile"
                         className="hover:filter hover:saturate-200 transition duration-500 z-20 w-full max-w-[400px] md:max-w-[600px] "
-                    />
+						/>
                 )}
             </div>
             {/*//@ main */}
