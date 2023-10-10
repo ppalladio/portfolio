@@ -46,21 +46,79 @@ html,
     margin: auto;
     transform: translateY(-50%);
 }
-.landing-card{
-	transition: all 0.5s ease;
-	backface-visibility: hidden;
+
+
+/* rotating card */
+
+.card-container {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
 }
-.landing-card:hover{
-	transform: rotateY(180deg); 
+
+.card {
+  background-color: var(--bridal-heath);
+  border: 0.2rem solid var(--dark-gray);
+  border-radius: 0.25rem;
+  cursor: pointer;
+  height: 12rem;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 500ms ease-in-out;
+  width: 100%;
 }
-.landing-card-back{
-	background-image: linear-gradient(to bottom right, #5CBC79, #4eb0b9);
+
+.card--picked {
+  transform: rotateY(180deg);
 }
-.landing-card:hover .landing-card-back{
-		transform: rotateY(0deg);   margin-left: 10rem;
-        width: 3rem;
-        height: 6rem;
+
+.card--guessed {
+  background-color: var(--white-smoke);
+  transform: rotateY(180deg) scale(0.9);
 }
+
+.card__front,
+.card__back {
+  align-items: center;
+  backface-visibility: hidden;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  padding: 1rem;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  transition: transform 330ms ease-in-out;
+  width: 100%;
+}
+
+.card__front {
+  flex-direction: column;
+  transform: rotateY(-180deg);
+}
+
+.card__back {
+  background-color: var(--sidecar);
+  transform: rotateY(0);
+}
+
+.front__img {
+  margin-bottom: 0.5rem;
+  width: 7rem;
+}
+
+.back__img {
+  width: 6rem;
+}
+
+.card__name {
+  font-size: 0.9rem;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+
 @keyframes marquee {
     0% {
         transform: translateX(100%);

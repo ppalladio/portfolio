@@ -7,6 +7,13 @@ export default {
 
 
             colors: {
+				'bridal-heath':'#FFFBF6',
+				'dark-gray': '#262626',
+				gray: '#323232',
+				sidecar:'#F4EAC0',
+				white: '#FFF',
+				'white-smoke': '#F5F5F5',
+				// colors
                 blue: '#6277DE',
                 red: '#DE6378',
                 green: '#78DE63',

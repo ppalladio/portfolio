@@ -14,43 +14,13 @@ const CARDS = [
         name: 'html5',
         img: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/74196/html5-logo.png',
     },
-    {
-        id: 4,
-        name: 'safari',
-        img: 'https://res.cloudinary.com/henryzarza/image/upload/v1601735663/General%20assets/safari_mw13q8.png',
-    },
-    {
-        id: 5,
-        name: 'rails',
-        img: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/74196/rails-logo.png',
-    },
-    {
-        id: 6,
-        name: 'node',
-        img: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/74196/nodejs-logo.png',
-    },
-    {
-        id: 7,
-        name: 'react',
-        img: 'https://res.cloudinary.com/henryzarza/image/upload/v1601735662/General%20assets/react_m1pmwj.png',
-    },
-    {
-        id: 8,
-        name: 'angular',
-        img: 'https://res.cloudinary.com/henryzarza/image/upload/v1601735662/General%20assets/angular_qqblks.png',
-    },
-    {
-        id: 9,
-        name: 'vuejs',
-        img: 'https://res.cloudinary.com/henryzarza/image/upload/v1601735662/General%20assets/vue_ctikzd.png',
-    },
+
 ];
 const cardContainer = document.querySelector('.card-container');
-const available = document.querySelector('#available');
-const modalTitle = document.querySelector('#modal-title');
+// const available = document.querySelector('#available');
+// const modalTitle = document.querySelector('#modal-title');
 const modal = document.querySelector('#modal');
-let currentCards = [...CARDS, ...CARDS];
-let isPaused = false;
+const currentCards = [...CARDS, ...CARDS];
 let counter = CARDS.length + 10;
 let isLose = false;
 
@@ -71,21 +41,15 @@ function shuffle(array: string[]) {
 
 function win() {
     isPaused = true;
-    modalTitle.innerHTML = 'You win! 🙌🥳';
-    modal.classList.add('modal--open');
 }
 
 function lose() {
     isLose = true;
-    modalTitle.innerHTML = 'You lose 😢😩';
-    modal.classList.add('modal--open');
 }
 
 function handleClick(e) {
     const { target } = e;
     if (
-        !isPaused &&
-        !isLose &&
         !target.classList.contains('card--guessed') &&
         !target.classList.contains('card--picked')
     ) {
