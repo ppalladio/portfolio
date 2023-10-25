@@ -19,7 +19,7 @@ const Landing: React.FC<LandingProps> = () => {
                         <img
                             alt="profile"
                             className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px]"
-                            src="@/src/assets/profile.png"
+                            src="/images/profile.png"
                         />
                     </div>
                 ) : (
