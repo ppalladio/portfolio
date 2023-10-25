@@ -52,7 +52,7 @@ const Contact = () => {
                     }}
                 >
                     <img
-                        src="../../src/assets/contact-sample.jpg"
+                        src="/images/contact-sample.jpg"
                         alt="contact"
                     />
                 </motion.div>

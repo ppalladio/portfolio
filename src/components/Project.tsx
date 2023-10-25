@@ -17,7 +17,7 @@ const Project: React.FC<ProjectProps> = ({ title, subtitle }) => {
                 <p className="text-2xl font-merriweather">{title}</p>
                 <p>{subtitle}</p>
             </div>
-            <img src={`./src/assets/${projectTitle}.png`} alt={projectTitle} />
+            <img src={`/images/assets/${projectTitle}.png`} alt={projectTitle} />
         </motion.div>
     );
 };
