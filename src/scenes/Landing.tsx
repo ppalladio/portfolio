@@ -4,7 +4,7 @@ import SocialMediaIcons from '../components/SocialMediaIcons';
 interface LandingProps {
     setSelectedPage: (page: string) => void;
 }
-const Landing: React.FC<LandingProps> = ({ setSelectedPage }) => {
+const Landing: React.FC<LandingProps> = () => {
     const isAboveMediumScreen = useMediaQuery('(min-width: 992px)');
     return (
         <section

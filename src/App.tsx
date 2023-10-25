@@ -44,7 +44,7 @@ function App() {
                 )}
                 <motion.div
                     onViewportEnter={() => setSelectedPage('home')}
-                    amount="all"
+                    // amount="all"
                     className="mx-0 mt-0 my-[-200px]"
                 >
                     <Landing setSelectedPage={setSelectedPage} />
