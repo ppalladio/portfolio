@@ -4,8 +4,6 @@ export default {
     mode: 'jit',
     theme: {
         extend: {
-
-
             colors: {
                 blue: '#6277DE',
                 red: '#DE6378',

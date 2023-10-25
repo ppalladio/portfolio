@@ -17,12 +17,20 @@ html,
     color: #444;
 }
 .left-chevron {
-	background: #000;
-	height: inherit;
-	width: 10rem;
-	clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
-	margin-left: 10px;
+    background-color:black;
+    height: inherit;
+    width: 10rem;
+    clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+    margin-left: 10px;
 }
+
+.animated-marquee {
+    -moz-animation: marquee 15s linear infinite;
+    -webkit-animation: marquee 15s linear infinite;
+    animation: marquee 10s linear infinite;
+    color: #000;
+}
+
 .animate-marquee {
     -moz-animation: marquee 15s linear infinite;
     -webkit-animation: marquee 15s linear infinite;
@@ -35,10 +43,10 @@ html,
     content: 'dddddddddddddddddddddddddd';
     -moz-animation: reverse-marquee 1s linear infinite;
     -webkit-animation: reverse-marquee 1s linear infinite;
-    animation: reverse-marquee 1s linear infinite;
+    animation: reverse-marquee 10s linear infinite;
     position: absolute;
     background-color: red;
-    height: inherit;
+    height: 10rem;
     width: 100vw;
     top: 50%;
     left: 0;
@@ -46,27 +54,23 @@ html,
     margin: auto;
     transform: translateY(-50%);
 }
-.landing-card{
-	transition: all 0.5s ease;
-	backface-visibility: hidden;
-}
-.landing-card:hover{
-	transform: rotateY(180deg); 
-}
-.landing-card-back{
-	background-image: linear-gradient(to bottom right, #5CBC79, #4eb0b9);
-}
-.landing-card:hover .landing-card-back{
-		transform: rotateY(0deg);   margin-left: 10rem;
-        width: 3rem;
-        height: 6rem;
-}
+
+/* @ js */
+
+
+.hero-section {
+	position: relative;
+	top: 50vh;
+	overflow: hidden;
+	font: 900 9vw/1 sans-serif;
+	min-height: 100vh;
+  }
 @keyframes marquee {
-    0% {
-        transform: translateX(100%);
+    from {
+        transform: translateX(0);
     }
-    100% {
-        transform: translateX(-100%);
+    to {
+        transform: translateX(-1%);
     }
 }
 
