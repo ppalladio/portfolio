@@ -52,7 +52,7 @@ const Contact = () => {
                     }}
                 >
                     <img
-                        src="../../src/assets/contact-sample.jpg"
+                        src="/images/contact-sample.jpg"
                         alt="contact"
                     />
                 </motion.div>
@@ -96,7 +96,7 @@ const Contact = () => {
                             {
                                 required: true,
                                 pattern:
-                                    /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                                    /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.toString(),
                             })}
                         />
                         {errors.email && (
@@ -109,13 +109,12 @@ const Contact = () => {
                         )}
                         <textarea
                             className="w-full bg-blue font-semibold placeholder-opaque-black p-3 mt-10 focus:bg-gradient-btn"
-                            type="text"
+                            inputMode="text"
                             placeholder="Message"
                             rows={4}
                             cols={50}
-                            textLength={1}
                             {...(register('message'),
-                            { required: false, maxLength: 2000 })}
+                            { required: false, maxLength: 2000, minLength: 1 })}
                         />
                         {errors.message && (
                             <p className="text-red mt-1 capitalize">
